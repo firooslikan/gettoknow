@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inconsolata', monospace;
+    font-family: 'Karla', sans-serif;
+}
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-color: black;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    width: 50px;
+
+}
+
+.navi {
+    flex: 1;
+    text-align: right;
+}
+
+.navi ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 12px 14px;
+    position: relative;
+}
+
+.navi ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #C0C0C0;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.navi ul li:hover::after {
+    width: 100%;
+}
+
+.title {
+    width: 90%;
+    color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.title h1 {
+    font-size: 60px;
+}
+
+.title p1 {
+    font-size: 30px;
+}
+
+.person {
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background-color: #000000;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.my {
+    display: flex;
+    height: 220px;
+    width: auto;
+    padding-left: 100px;
+}
+
+.person-desc {
+    width: auto;
+    height: auto;
+}
+
+.main {
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    color: #ffffff;
+}
+
+.main h1 {
+    color: #ffffff;
+    position: absolute;
+    top: 10%;
+    left: 34%;
+    text-align: middle;
+    font-size: 26px;
+}
+
+.main h2 {
+    color: #ffffff;
+    position: absolute;
+    top: 14%;
+    left: 34%;
+    text-align: middle;
+    font-size: 35px;
+}
+
+.main p {
+    font-size: 15px;
+    color: #ffffff;
+    position: absolute;
+    top: 21%;
+    left: 34%;
+    text-align: middle;
+}
+
+.experiences {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    position: center;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.gallery {
+    position: relative;
+    flex: 1;
+    margin: 10px;
+    overflow: hidden;
+    transition: transform 0.4s;
+    border: 1px solid #000000;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.gallery:hover {
+    transform: scale(1.1);
+}
